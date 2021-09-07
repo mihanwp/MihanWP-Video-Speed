@@ -1,0 +1,56 @@
+.wp-block-video{
+	position: relative;
+}
+.wp-block-video video{
+	z-index:1;
+}
+.mw-speed{
+	z-index:2;
+	position: absolute;
+	right: 12px;
+	margin-top: 10px;
+	text-align: center;
+}
+.mw-speed .mw-speed-btn{
+	background-color:rgba(0,0,0,0.5);
+	cursor: pointer;
+	box-shadow:0 0 10px rgba(0,0,0,0.1);
+	padding:5px;
+	display:flex;
+	border-radius:100%;
+}
+.mw-speed .mw-speed-btn:hover{
+	background-color:rgba(0,0,0,0.8);
+}
+.mw-speed .mw-speed-list{
+	margin: 0;
+	display: none;
+	box-shadow:0 0 10px rgba(0,0,0,0.1);
+	padding:5px;
+	background-color:rgba(0,0,0,0.5);
+	color:#fff;
+	opacity: 0;
+	direction:ltr;
+	position:absolute;
+	right:0;
+	top:32px;
+	border-radius:4px;
+}
+.mw-speed .mw-speed-list div{
+	list-style: none !important;
+	color: #35495c;
+	color:#fff;
+	font-size:15px;
+	text-align:left;
+	padding:0 10px;
+	direction:ltr;
+	cursor: pointer !important;
+	border-radius:3px;
+}
+.mw-speed .mw-speed-list div:hover{
+	background-color:rgba(0,0,0,0.5);
+}
+.mw-speed:hover .mw-speed-list{
+	display: block;
+	opacity: 1;
+}
